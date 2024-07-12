@@ -3,3 +3,53 @@ html, body {
     padding: 0px;
     margin: 0px;
 }
+
+.game {
+    border: solid black;
+    width: fit-content;
+    margin: 25px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.headline {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    --containerWidth: 700px;
+    width: var(--containerWidth);
+    background-color: white;
+}
+
+.game2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square {
+    flex: 0 0 calc(var(--containerWidth) - 93.75%);
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+    border: 0.5px solid black;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(20, 126, 219);
+    background-color: aliceblue;
+    font-weight: bold;
+}
